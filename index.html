@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css" />
+  <script src="script.js"></script>
+
+  <title>The Paws HELP</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">&emsp;<img src="photos/logo.jpeg" alt="Paws" height="50" width="50">&emsp;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home&emsp;&emsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us&emsp;&emsp;</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Need Help?
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Hospitals</a></li>
+              <li><a class="dropdown-item" href="#">Rescue centers</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Shelters</a></li>
+              <li><a class="dropdown-item" href="#">Online Vet</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" onclick="login()">
+            <a class="nav-link">&emsp;&emsp;<i class="fa-regular fa-user"></i> Sign in</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">&emsp;
+          <button class="btn btn-outline-success" type="submit">Search</button>&emsp;&emsp;
+        </form>
+      </div>
+    </div>
+  </nav><br><br>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/800x200/?cat,hospital" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/800x200/?cat,kitten" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/800x200/?cat,doctor" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/800x200/?cat,play" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/800x200/?cat,family" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/800x200/?cat,dog" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hospitals</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cat Supplies</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shelter Homes</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><br><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rescue Centers</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Legal Corner</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Online Vet Consultataion</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <ul class="footer">
+    <i class="fa-brands fa-twitter fa-1x"></i>
+    <i class="fa-brands fa-facebook fa-1x"></i>
+    <i class="fa-brands fa-instagram fa-1x"></i>
+    <i class="fa-brands fa-whatsapp fa-1x"></i>
+    <li class="list-group-item">Know more about us</li>
+    <li class="list-group-item">Contact</li>
+    <li class="list-group-item">FeedBack</li><hr>
+    <li class="list-group-item">Terms & Conditions</li>
+    <li class="list-group-item">Privacy policy</li>
+    <li class="list-group-item">Email</li>
+    <li class="list-group-item">Whatsapp</li>
+  </ul>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
