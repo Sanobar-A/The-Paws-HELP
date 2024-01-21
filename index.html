@@ -26,20 +26,22 @@
             <a class="nav-link active" aria-current="page" href="#">Home&emsp;&emsp;</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us&emsp;&emsp;</a>
+            <a class="nav-link" href="#" onclick="about()">About us&emsp;&emsp;</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Need Help?
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Hospitals</a></li>
-              <li><a class="dropdown-item" href="#">Rescue centers</a></li>
+              <li><a class="dropdown-item" onclick="hospitals()" href="#">Hospitals</a></li>
+              <li><a class="dropdown-item" onclick="rescue()" href="#">Rescue centers</a></li>
+              <li><a class="dropdown-item" onclick="supplies()" href="#">Cat Supplies</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Shelters</a></li>
-              <li><a class="dropdown-item" href="#">Online Vet</a></li>
+              <li><a class="dropdown-item" onclick="shelter()" href="#">Shelters</a></li>
+              <li><a class="dropdown-item" onclick="online_vet()" href="#">Online Vet</a></li>
+              <li><a class="dropdown-item" onclick="legal()" href="#">Legal Corner</a></li>
             </ul>
           </li>
           <li class="nav-item" onclick="login()">
@@ -85,10 +87,106 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div><br><br>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
+  <div class="card mb-3" onclick="hospitals()"
+    style="max-width: 540px;margin-left: auto; margin-right: auto; cursor: pointer;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://source.unsplash.com/500x500/?hospital,cat" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Hospitals</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="card mb-3" onclick="supplies()"
+    style="max-width: 540px; margin-left: auto; margin-right: auto; cursor: pointer;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://source.unsplash.com/500x500/?cat,hospital" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Cat Supplies</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" onclick="shelter()"
+    style="max-width: 540px;margin-left: auto; margin-right: auto; cursor: pointer;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://source.unsplash.com/500x500/?hospital,cat" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Shelter Homes</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="card mb-3" onclick="legal()"
+    style="max-width: 540px; margin-left: auto; margin-right: auto; cursor: pointer;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://source.unsplash.com/500x500/?cat,hospital" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Legal Corner</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" onclick="rescue()"
+    style="max-width: 540px;margin-left: auto; margin-right: auto; cursor: pointer;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://source.unsplash.com/500x500/?hospital,cat" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Rescue Centers</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="card mb-3" onclick="online_vet()"
+    style="max-width: 540px; margin-left: auto; margin-right: auto; cursor: pointer;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://source.unsplash.com/500x500/?cat,hospital" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Online Vet Consultataion</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" onclick="hospitals()" style="cursor: pointer;">
       <div class="card">
-        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <img src="https://source.unsplash.com/90x40/?hospital,cat" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Hospitals</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -96,9 +194,9 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" onclick="supplies()" style="cursor: pointer;">
       <div class="card">
-        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <img src="https://source.unsplash.com/90x40/?legal,court" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Cat Supplies</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -106,9 +204,9 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" onclick="shelter()" style="cursor: pointer;">
       <div class="card">
-        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <img src="https://source.unsplash.com/90x40/?kitten,kitten" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Shelter Homes</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -119,9 +217,9 @@
   </div>
   </div><br><br>
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
+    <div class="col" onclick="rescue()" style="cursor: pointer;">
       <div class="card">
-        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <img src="https://source.unsplash.com/90x40/?cat,building" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Rescue Centers</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -129,9 +227,9 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" onclick="legal()" style="cursor: pointer;">
       <div class="card">
-        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <img src="https://source.unsplash.com/90x40/?cat,play" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Legal Corner</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -139,9 +237,9 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" onclick="online_vet()" style="cursor: pointer;">
       <div class="card">
-        <img src="https://source.unsplash.com/90x40/?hospital,building" class="card-img-top" alt="...">
+        <img src="https://source.unsplash.com/90x40/?kitten,doctor" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Online Vet Consultataion</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -149,7 +247,7 @@
         </div>
       </div>
     </div>
-  </div><br><br>
+  </div>--><br><br>
   <ul class="footer">
     <i class="fa-brands fa-twitter fa-1x"></i>
     <i class="fa-brands fa-facebook fa-1x"></i>
@@ -157,7 +255,8 @@
     <i class="fa-brands fa-whatsapp fa-1x"></i>
     <li class="list-group-item">Know more about us</li>
     <li class="list-group-item">Contact</li>
-    <li class="list-group-item">FeedBack</li><hr>
+    <li class="list-group-item">FeedBack</li>
+    <hr>
     <li class="list-group-item">Terms & Conditions</li>
     <li class="list-group-item">Privacy policy</li>
     <li class="list-group-item">Email</li>
