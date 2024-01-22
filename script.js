@@ -48,3 +48,7 @@ function about(){
     window.open("about.html");
     window.close("home.html");
 }
+function full_time_phospitals() {
+    window.open("full_time_phospitals.html");
+    window.close("home.html"); 
+}

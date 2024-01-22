@@ -26,7 +26,7 @@
                         <a class="nav-link" href="#" onclick="home()">Home&emsp;&emsp;</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us&emsp;&emsp;</a>
+                        <a class="nav-link" href="#" onclick="about()">About us&emsp;&emsp;</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -34,13 +34,15 @@
                             Need Help?
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Hospitals</a></li>
-                            <li><a class="dropdown-item" href="#">Rescue centers</a></li>
+                            <li><a class="dropdown-item" onclick="hospitals()" href="#">Hospitals</a></li>
+                            <li><a class="dropdown-item" onclick="rescue()" href="#">Rescue centers</a></li>
+                            <li><a class="dropdown-item" onclick="supplies()" href="#">Cat Supplies</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Shelters</a></li>
-                            <li><a class="dropdown-item" href="#">Online Vet</a></li>
+                            <li><a class="dropdown-item" onclick="shelter()" href="#">Shelters</a></li>
+                            <li><a class="dropdown-item" onclick="online_vet()" href="#">Online Vet</a></li>
+                            <li><a class="dropdown-item" onclick="legal()" href="#">Legal Corner</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" onclick="login()">
