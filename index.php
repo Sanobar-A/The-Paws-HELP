@@ -55,17 +55,17 @@
       </div>
     </div>
   </nav><br><br>
-  <form class="row g-3 needs-validation" action="connect.php" method="post" novalidate>
+  <form class="row g-3 needs-validation" novalidate action="connect.php" method="post">
     <div class="col-md-4 position-relative">
       <label for="validationTooltip01" class="form-label">First name</label>
-      <input type="text" class="form-control" name="fname" id="validationTooltip01" value="Mark" required>
+      <input type="text" class="form-control" id="validationTooltip01" name="fname" value="Mark" required>
       <div class="valid-tooltip">
         Looks good!
       </div>
     </div>
     <div class="col-md-4 position-relative">
       <label for="validationTooltip02" class="form-label">Last name</label>
-      <input type="text" class="form-control" name="lname"  id="validationTooltip02" value="Otto" required>
+      <input type="text" class="form-control" id="validationTooltip02" name="lname" value="Otto" required>
       <div class="valid-tooltip">
         Looks good!
       </div>
@@ -83,7 +83,7 @@
     </div>
     <div class="col-md-6 position-relative">
       <label for="validationTooltip03" class="form-label">City</label>
-      <input type="text" class="form-control" id="validationTooltip03" required>
+      <input type="text" class="form-control" name="city" id="validationTooltip03" required>
       <div class="invalid-tooltip">
         Please provide a valid city.
       </div>
@@ -104,7 +104,7 @@
     </div>
     <div class="col-md-3 position-relative">
       <label for="validationTooltip05" class="form-label">Zip</label>
-      <input type="text" class="form-control" name="city" id="validationTooltip05" required>
+      <input type="text" class="form-control" name="zip" id="validationTooltip05" required>
       <div class="invalid-tooltip">
         Please provide a valid zip.
       </div>
