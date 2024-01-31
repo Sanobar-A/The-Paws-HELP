@@ -3,3 +3,14 @@
     background-color: black;
 
 }
+.blur_background {
+    background-image: url("https://source.unsplash.com/1500x1500/?kitten,cat") ;
+    backdrop-filter: blur(30px);
+    height: max-content;
+    background-size: cover;
+    height: 290px;
+    width: 40%;
+    margin: auto;
+    padding: 20px 20px ;
+    border-radius: 5px;
+}
