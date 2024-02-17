@@ -52,3 +52,31 @@ function full_time_phospitals() {
     window.open("full_time_phospitals.html");
     window.close("home.html"); 
 }
+function feedback(){
+    window.open("feedback.html");
+    window.close("home.html");
+}
+const search = () => {
+   const searchbox = document.getElementById('searchinput').value.toUpperCase();
+   const searchlist = document.querySelectorAll('.card mb-3');
+   const searchlist1 = document.querySelectorAll('.row g-0'); 
+   const searchlist2 = document.querySelectorAll('.col-md-8');
+   const searchlist3 = document.querySelectorAll('.card-body'); 
+   const searchlist4 = searchlist.querySelectorAll('.card-title'); 
+   const name = document.getElementsByTagName("h5");
+
+   for(var i=0; i< name.length; i++){
+    let match = searchlist3[i].getElementsByTagName('h5')[0];
+
+    if(match){
+        let textValue = match.textContent || match.innerHTML
+
+        if(textValue.toUpperCase().indexOf(searchbox) > -1){
+            searchlist3[i].Style.display = "";
+        }
+        else {
+            searchlist3[i].Style.display = "none";
+        }
+    }
+   }
+}
