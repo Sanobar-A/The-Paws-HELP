@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.css" />
     <script src="script.js"></script>
 
-    <title>The Paws HELP</title>
+    <title>Feedback</title>
 </head>
 
 <body>
@@ -49,21 +49,37 @@
                         <a class="nav-link">&emsp;&emsp;<i class="fa-regular fa-user"></i> Sign in</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">&emsp;
-                    <button class="btn btn-outline-success" type="submit">Search</button>&emsp;&emsp;
+                <form class="d-flex">
+                    <button type="button" class="btn btn-outline-secondary" onclick="feedback()">Give Us
+                        Feedback?</button>
                 </form>
             </div>
         </div>
     </nav><br><br>
-    <div class="mb-3">
+    <form class="row g-3 needs-validation" action="feedback.php" method="post" novalidate>
         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+        <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="sample@gmail.com"><br><br>
+        <select class="form-select" name="field" id="validationTooltip04" required>
+            <option selected disabled value="">select field</option>
+            <option>hospitals</option>
+            <option>rescue centres</option>
+            <option>shelter homes</option>
+            <option>legal corner</option>
+            <option>supplies</option>
+            <option>online vet consultaion</option>
+            <option>general</option>
+        </select>
+        <div class="invalid-tooltip">
+            Please select a valid field.
+        </div><br>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
+            <textarea class="form-control" name="feedback" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" style="margin-top: 2%;">Submit</button>
+            </div>
+        </div>
+    </form><br>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
 
