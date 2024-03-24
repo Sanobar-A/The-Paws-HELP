@@ -36,3 +36,41 @@
 .list-group-item:hover {
     cursor: pointer;
 }
+
+.hospital-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hospital-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.hospital-details {
+    margin-top: auto;
+}
+
+.hospital-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.hospital-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}

@@ -26,7 +26,7 @@
 			die("Error during execution: " . $stmt->error);
 		}
 		
-		echo "Registration successfully...";
+		echo "Signed in successfully...";
 		
 		$stmt->close();
 		$conn->close();
